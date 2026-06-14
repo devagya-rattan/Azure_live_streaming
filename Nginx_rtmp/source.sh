@@ -1,0 +1,2 @@
+# Local camera feed LINUX_OS
+ffmpeg -f v4l2 -framerate 30 -video_size 640x480 -i /dev/video0 -c:v libx264 -preset veryfast -b:v 1500k -maxrate 1500k -bufsize 3000k -pix_fmt yuv420p -g 60 -an -f flv rtmp://20.213.156.33/live/stream
