@@ -2,4 +2,3 @@ node_modules
 .terraform
 .terraform.locl.hcl
 Azure.txt
-Documentation
