@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
-
+import { configDotenv } from "dotenv";
 const app = express();
 const PORT = 5000;
-
+configDotenv()
 app.use(
   cors({
     origin: "*",
@@ -12,7 +12,7 @@ app.use(
 );
 
 app.get("/api/live-streaming", (req, res) => {
-  res.json({ url: "http://20.213.156.33:8080/hls/stream.m3u8" });
+  res.json({ url: process.env.url || 9090 });
 });
 
 app.listen(PORT, () => {
