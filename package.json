@@ -16,5 +16,8 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "node-media-server": "^4.2.8"
+  },
+   "devDependencies": {
+    "esbuild": "^0.28.1"
   }
 }
